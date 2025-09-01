@@ -1,7 +1,7 @@
 {
-    "target_search_count": 20000,
-    "user_active_time": 1000,
-    "user_delay_time": 1000,
+    "target_search_count": 10,
+    "user_active_time": 10,
+    "user_delay_time": 30,
     "is_promotion_active": true,
     "first_ad_type": 1,
     "new_user_first_ad_step": 3,
@@ -26,6 +26,7 @@
     "first_mrec_ads_image": ["0", "0"],
     "second_mrec_ads_image": ["0", "0"],
     "is_show_related": true,
+    "is_reference_active": true,
     "deny_cc": [
         "US",
         "GB",
