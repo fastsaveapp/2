@@ -35,7 +35,6 @@
         "GB",
         "MY",
         "PH",
-        "IN",
         "JP",
         "CN",
         "UY",
@@ -43,11 +42,9 @@
         "CA",
         "IE",
         "IL",
-        "BR",
         "SG",
         "KR",
-        "ES",
-        "MX"
+        "ES"
     ],
     "gdpr_cc": [
         "GB",
