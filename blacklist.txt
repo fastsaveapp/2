@@ -4,7 +4,7 @@
   ],
   "channelIdList": [
     "UCenWG8ydkLWzef6dzrNO6XA",
-    "UCLyHnUnornhwqu3ljgLHnwg"
+    "UCByOQJjav0CUDwxCk-jVNRQ"
   ],
   "mediaNameList": [
     "DJ Old Man",
@@ -15,7 +15,7 @@
     "dj.oldman",
     "Dj.Old Man",
     "Metin Düzleyen",
-    "MetinDüzleyen",
+    "Drake",
     "Loop of Dust",
     "Ahhh Müjgan",
     "İstanbul Ağlıyor",
