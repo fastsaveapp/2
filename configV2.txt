@@ -1,0 +1,536 @@
+{
+   "schemaVersion":1,
+   "configVersion":19,
+   "updatedAt":"2026-04-27T00:00:00Z",
+   "decisionPriority":[
+      "redirect",
+      "priority",
+      "forceUpdate",
+      "block",
+      "softUpdate",
+      "maintenance",
+      "appProperties",
+      "adConfig",
+      "featureFlags"
+   ],
+   "properties":{
+      "redirect":[
+         {
+            "id":"redirect_regular_users",
+            "enabled":false,
+            "matchMode":"and",
+            "targeting":{
+               "countries":{
+                  "include":[
+                     
+                  ],
+                  "exclude":[
+                     
+                  ]
+               },
+               "platforms":[
+                  "android",
+                  "ios"
+               ],
+               "versions":[
+                  
+               ],
+               "userTypes":[
+                  
+               ]
+            },
+            "value":{
+               "androidUrl":"com.mzk.evr",
+               "iosUrl":"https://apps.apple.com/app/id000000000",
+               "showInterstitialAd":true
+            }
+         }
+      ],
+      "priority":[
+         {
+            "id":"priority_regular_users",
+            "enabled":false,
+            "matchMode":"and",
+            "targeting":{
+               "countries":{
+                  "include":[
+                     
+                  ],
+                  "exclude":[
+                     
+                  ]
+               },
+               "platforms":[
+                  "android",
+                  "ios"
+               ],
+               "versions":[
+                  
+               ],
+               "userTypes":[
+                  
+               ]
+            },
+            "value":{
+               "androidUrl":"com.mzk.evr",
+               "iosUrl":"https://apps.apple.com/app/id000000000"
+            }
+         }
+      ],
+      "forceUpdate":[
+         {
+            "id":"force_update_versions",
+            "enabled":false,
+            "matchMode":"and",
+            "targeting":{
+               "countries":{
+                  "include":[
+                     
+                  ],
+                  "exclude":[
+                     
+                  ]
+               },
+               "platforms":[
+                  "android",
+                  "ios"
+               ],
+               "versions":[
+                  
+               ]
+            },
+            "value":{
+               "showInterstitialAd":true
+            }
+         }
+      ],
+"block": [
+  {
+    "id": "block_access_android",
+    "enabled": true,
+    "matchMode": "and",
+    "targeting": {
+      "countries": {
+        "include": [
+          "US",
+          "GB",
+          "MY",
+          "PH",
+          "IN",
+          "JP",
+          "CN",
+          "UY",
+          "BE",
+          "TH",
+          "CA",
+          "IE",
+          "IL",
+          "SG",
+          "KR",
+          "ES"
+        ],
+        "exclude": []
+      },
+      "platforms": [
+        "android"
+      ],
+      "versions": []
+    }
+  },
+  {
+    "id": "block_access_ios",
+    "enabled": true,
+    "matchMode": "and",
+    "targeting": {
+      "countries": {
+        "include": [],
+        "exclude": []
+      },
+      "platforms": [
+        "ios"
+      ],
+      "versions": ["1.2.0"]
+    }
+  }
+],
+      "softUpdate":[
+         {
+            "id":"soft_update_versions",
+            "enabled":false,
+            "matchMode":"and",
+            "targeting":{
+               "countries":{
+                  "include":[
+                     
+                  ],
+                  "exclude":[
+                     
+                  ]
+               },
+               "platforms":[
+                  "android",
+                  "ios"
+               ],
+               "versions":[
+                  
+               ]
+            }
+         }
+      ],
+      "maintenance":[
+         {
+            "id":"maintenance_versions",
+            "enabled":false,
+            "matchMode":"and",
+            "targeting":{
+               "countries":{
+                  "include":[
+                     
+                  ],
+                  "exclude":[
+                     
+                  ]
+               },
+               "platforms":[
+                  "android",
+                  "ios"
+               ],
+               "versions":[
+                  
+               ]
+            }
+         }
+      ],
+      "appProperties":{
+         "isSecureFlag":[
+            {
+               "id":"secure_flag_global",
+               "enabled":true,
+               "matchMode":"and",
+               "targeting":{
+                  "countries":{
+                     "include":[
+                        
+                     ],
+                     "exclude":[
+                        
+                     ]
+                  },
+                  "platforms":[
+                     "android",
+                     "ios"
+                  ],
+                  "versions":[
+                     
+                  ]
+               }
+            }
+         ],
+         "gdprEnabled":[
+            {
+               "id":"gdpr_by_country",
+               "enabled":true,
+               "matchMode":"and",
+               "targeting":{
+                  "countries":{
+                     "include":[
+                        "GB",
+                        "AT",
+                        "BE",
+                        "BG",
+                        "HR",
+                        "CY",
+                        "CZ",
+                        "DK",
+                        "EE",
+                        "FI",
+                        "FR",
+                        "DE",
+                        "GR",
+                        "HU",
+                        "IS",
+                        "IE",
+                        "IT",
+                        "LV",
+                        "LI",
+                        "LT",
+                        "LU",
+                        "MT",
+                        "NL",
+                        "NO",
+                        "PL",
+                        "PT",
+                        "RO",
+                        "SK",
+                        "SI",
+                        "ES",
+                        "SE"
+                     ],
+                     "exclude":[
+                        
+                     ]
+                  },
+                  "platforms":[
+                     "android",
+                     "ios"
+                  ],
+                  "versions":[
+                     
+                  ]
+               }
+            }
+         ]
+      },
+      "adConfig":{
+         "provider":[
+            {
+               "id":"ads_provider_default",
+               "enabled":true,
+               "matchMode":"and",
+               "targeting":{
+                  "countries":{
+                     "include":[
+                        
+                     ],
+                     "exclude":[
+                        
+                     ]
+                  },
+                  "platforms":[
+                     "android",
+                     "ios"
+                  ],
+                  "versions":[
+                     
+                  ]
+               },
+               "value":"casai"
+            }
+         ],
+         "adFree":[
+            {
+               "id":"ad_free_versions",
+               "enabled":false,
+               "matchMode":"and",
+               "targeting":{
+                  "countries":{
+                     "include":[
+                        
+                     ],
+                     "exclude":[
+                        
+                     ]
+                  },
+                  "platforms":[
+                     "android",
+                     "ios"
+                  ],
+                  "versions":[
+                     
+                  ]
+               }
+            }
+         ],
+         "tier":[
+            {
+               "id":"ad_tier_high_value_countries",
+               "enabled":true,
+               "matchMode":"and",
+               "targeting":{
+                  "countries":{
+                     "include":[
+                        "US",
+                        "CA",
+                        "GB"
+                     ],
+                     "exclude":[
+                        
+                     ]
+                  },
+                  "platforms":[
+                     "android",
+                     "ios"
+                  ],
+                  "versions":[
+                     
+                  ]
+               },
+               "value":{
+                  "firstAdDelay":10,
+                  "repeatInterval":30,
+                  "newUserFirstAdStep":3,
+                  "firstAdStep":1
+               }
+            },
+            {
+               "id":"ad_tier_medium_value_countries",
+               "enabled":true,
+               "matchMode":"and",
+               "targeting":{
+                  "countries":{
+                     "include":[
+                        "ES",
+                        "MY",
+                        "ID"
+                     ],
+                     "exclude":[
+                        
+                     ]
+                  },
+                  "platforms":[
+                     "android",
+                     "ios"
+                  ],
+                  "versions":[
+                     
+                  ]
+               },
+               "value":{
+                  "firstAdDelay":8,
+                  "repeatInterval":20,
+                  "newUserFirstAdStep":3,
+                  "firstAdStep":1
+               }
+            },
+            {
+               "id":"ad_tier_low_value_countries",
+               "enabled":true,
+               "matchMode":"and",
+               "targeting":{
+                  "countries":{
+                     "include":[
+                        "IN",
+                        "TR",
+                        "PH",
+                        "VN",
+                        "PK",
+                        "BD"
+                     ],
+                     "exclude":[
+                        
+                     ]
+                  },
+                  "platforms":[
+                     "android",
+                     "ios"
+                  ],
+                  "versions":[
+                     
+                  ]
+               },
+               "value":{
+                  "firstAdDelay":3,
+                  "repeatInterval":10,
+                  "newUserFirstAdStep":3,
+                  "firstAdStep":1
+               }
+            },
+            {
+               "id":"ad_tier_default",
+               "enabled":true,
+               "matchMode":"and",
+               "targeting":{
+                  "countries":{
+                     "include":[
+                        
+                     ],
+                     "exclude":[
+                        
+                     ]
+                  },
+                  "platforms":[
+                     "android",
+                     "ios"
+                  ],
+                  "versions":[
+                     
+                  ]
+               },
+               "value":{
+                  "firstAdDelay":15,
+                  "repeatInterval":30,
+                  "newUserFirstAdStep":3,
+                  "firstAdStep":1
+               }
+            }
+         ]
+      },
+      "featureFlags":{
+         "playlistSuggestions":[
+            {
+               "id":"feature_playlist",
+               "enabled":true,
+               "matchMode":"and",
+               "targeting":{
+                  "countries":{
+                     "include":[
+                        
+                     ],
+                     "exclude":[
+                        
+                     ]
+                  },
+                  "platforms":[
+                     "android",
+                     "ios"
+                  ],
+                  "versions":[
+                     
+                  ]
+               }
+            }
+         ],
+         "relatedSuggestions":[
+            {
+               "id":"feature_related",
+               "enabled":true,
+               "matchMode":"and",
+               "targeting":{
+                  "countries":{
+                     "include":[
+                        
+                     ],
+                     "exclude":[
+                        
+                     ]
+                  },
+                  "platforms":[
+                     "android",
+                     "ios"
+                  ],
+                  "versions":[
+                     
+                  ]
+               }
+            }
+         ],
+         "proFeature":[
+            {
+               "id":"pro_feature_rule",
+               "enabled":false,
+               "matchMode":"and",
+               "targeting":{
+                  "countries":{
+                     "include":[
+                        
+                     ],
+                     "exclude":[
+                        
+                     ]
+                  },
+                  "platforms":[
+                     "android",
+                     "ios"
+                  ],
+                  "versions":[
+                     
+                  ],
+                  "userTypes":[
+                     
+                  ]
+               }
+            }
+         ]
+      }
+   }
+}
